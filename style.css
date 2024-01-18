@@ -11,8 +11,24 @@ html, body{
 }
 
 #main{
-    width: 100%;
+    min-width: 100vh;
     background-color: #091C44;
+}
+
+@keyframes line {
+    0%{
+        left: 0;
+        width: 0%;
+    }
+    50%{
+        left: 30%;
+        width: 60%;
+    }
+    100%{
+        left: 0;
+        width: 0;
+    }
+
 }
 
 nav{
@@ -35,14 +51,32 @@ nav{
     text-align: center;
     padding: 4px;
 
-
 }
 
 .cnt-nav a{
-    padding: 2vh;
+    padding: 4vh;
     text-decoration: none;
     color: white;
+    position: relative;
 }
+
+.cnt-nav a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    left: 8%;
+    background-color: aliceblue;
+    bottom: 20%;
+}
+
+
+.cnt-nav a:hover::before{
+    animation-name: line;
+    animation-duration: .8s;
+}
+
+
 .rght-nav{
     width: 30%;
     /* background-color: green; */
@@ -64,7 +98,7 @@ nav{
     padding: 1px 2px;
     border-radius: 50%;
     background-color: rgb(82, 79, 79);
-    margin-left: 14vh;
+    margin-left: 20vh;
 }
 
 
@@ -112,7 +146,7 @@ nav{
     color: white;
     text-decoration: none;
     padding: 8px 22px;
-    width: 16vw;
+    width: 11vw;
     background-color: transparent;
     border: 3px solid green;
     border-radius: 20px;
@@ -142,7 +176,7 @@ nav{
 
 .part2 .lft img{
     width: 80%;
-    height: 80%;
+    height: 70%;
     margin-left: 6vh;
     margin-top: 2vh;
 
@@ -235,4 +269,52 @@ nav{
     color: white;
     position: relative;
     /* background-color: rgb(186, 186, 186); */
+}
+
+
+
+.part3{
+    width: 100%;
+    background-color: black;
+    height: 70vh;
+    display: flex;
+}
+
+.part3 .lft3{
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+
+.part3 .lft3 h1{
+    font-size: 3vw;
+    margin-left: 10vh;
+    width: 60%;
+}
+.part3 .rght3{
+    width: 50%;
+    height: 100%;
+}
+
+.part3 .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.part3 .row button i{
+    float: right;
+}
+
+
+.part3 .row button{
+    padding: 20px 22px;
+    width: 70%;
+    text-align: left;
+    border: none;
+    background-color: #414141;
+    color: #fff;
+    margin: 1vh;
 }
