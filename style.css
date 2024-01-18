@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    background-color: #091C44;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+.lft-nav{
+    width: 20%;
+    padding-left: 2vh;
+    color: rgb(226, 226, 226);
+}
+
+.cnt-nav{
+    width: 50%;
+    text-align: center;
+    padding: 4px;
+
+
+}
+
+.cnt-nav a{
+    padding: 2vh;
+    text-decoration: none;
+    color: white;
+}
+.rght-nav{
+    width: 30%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vh;
+    color: white;
+}
+
+.rght-nav h2{
+    font-size: 3vh;
+    width: 100%;
+    padding-left: 8px;
+}
+
+.rght-nav i{
+    font-size: 4vh;
+    padding: 1px 2px;
+    border-radius: 50%;
+    background-color: rgb(82, 79, 79);
+    margin-left: 14vh;
+}
+
+
+.part1{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    background-color: #000000;
+}
+
+.part1 .lft{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+
+.part1 .lft .text-box{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+}
+
+.part1 .lft .text-box h1{
+    font-weight: 500;
+    font-size: 5vh;
+}
+.part1 .lft .text-box span{
+    color: green;
+}
+
+.part1 .lft .get{
+    position: absolute;
+    top: 52%;
+    left: 10%;
+}
+
+.part1 .lft .get a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 8px 22px;
+    width: 16vw;
+    background-color: transparent;
+    border: 3px solid green;
+    border-radius: 20px;
+}
+
+.part1 .lft .get a i{
+    font-size: 4vh;
+    padding: 1px 2px;
+    border-radius: 50%;
+    background-color: green;
+    
+}
+.part1 .rght{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+    background-image: url(https://images.unsplash.com/photo-1430276084627-789fe55a6da0?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+.part2{
+    width: 100%;
+    height: 125vh;
+    background-color: black;
+}
+
+
+.part2 .lft img{
+    width: 80%;
+    height: 80%;
+    margin-left: 6vh;
+    margin-top: 2vh;
+
+}
+.part2 .text{
+    color: white;
+    width: 60%;
+    margin-left: 5vh;
+    margin-top: 2vh;
+
+}
+
+.part2 .text span{
+    color: green;
+}
+
+.part2-rght{
+    width: 60%;
+    display: flex;
+}
+
+.part2-rght .lft2{
+    width: 50%;
+    position: relative;
+    color: white;
+}
+
+.part2-rght .lft2 .text1{
+    width: 80%;
+    margin-top: 4vh;
+    margin-left: 1vh;
+}
+
+.part2-rght .lft2 .text1 h1{
+    font-size: 2.5vh;
+}
+
+.part2-rght .lft2 .service, .part2-rght .rght2 .service{
+    position: absolute;
+    top: 10%;
+    padding: 12px 22px;
+    height: 24vw;
+    width: 40vh;
+    /* border: .5px solid green; */
+    
+
+}
+
+.part2-rght .lft2 .serv2, .part2-rght .rght2 .serv2{
+    position: absolute;
+    top: 45%;
+}
+
+
+
+.part2-rght .lft2 .service h1{
+    font-size: 4vh;
+    width: 80%;
+    font-weight: 500;
+
+}
+
+.part2-rght .lft2 .service p{
+    margin-top: 2vh;
+    line-height: 20px;
+}
+.part2-rght .rght2 .service h1{
+    font-size: 4vh;
+    width: 80%;
+    font-weight: 500;
+
+}
+
+.part2-rght .rght2 .service p{
+    margin-top: 2vh;
+    line-height: 20px;
+}
+
+
+.part2-rght .rght2 .text1 h1{
+    font-size: 2.5vh;
+}
+.part2-rght .rght2 .text1{
+    width: 80%;
+    margin-top: 4vh;
+    margin-left: 1vh;
+}
+.part2-rght .rght2{
+    width: 50%;
+    color: white;
+    position: relative;
+    /* background-color: rgb(186, 186, 186); */
+}
